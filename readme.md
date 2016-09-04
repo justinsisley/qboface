@@ -16,6 +16,17 @@ npm install -S qboface
 
 ```javascript
 const qboface = require('qboface');
+
+qboface.initialize({
+  consumerKey: 'xxxxx',
+  consumerSecret: 'xxxxx',
+  enableSandbox: true,
+  enableDebug: false,
+});
+
+qboface.read();
+qboface.query();
+qboface.report();
 ```
 
 ## Versioning
