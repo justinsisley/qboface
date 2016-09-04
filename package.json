@@ -1,0 +1,21 @@
+{
+  "name": "qboface",
+  "version": "0.0.1",
+  "description": "A convenient interface for node-quickbooks",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "author": "Justin Sisley <justin@vera.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^3.4.0",
+    "eslint-config-airbnb": "^10.0.1",
+    "eslint-plugin-import": "^1.14.0",
+    "eslint-plugin-jsx-a11y": "^2.2.1",
+    "eslint-plugin-react": "^6.2.0"
+  },
+  "dependencies": {
+    "node-quickbooks": "^2.0.11"
+  }
+}
