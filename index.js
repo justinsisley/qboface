@@ -49,6 +49,18 @@ const qboface = {
         return reject('method not found');
       }
 
+      // getPreferences has a different signature, taking only the callback as
+      // a single argument
+      if (method === 'getPreferences') {
+        return qbo[method]((error, response) => {
+          if (error) {
+            return reject(error);
+          }
+
+          return resolve(response);
+        });
+      }
+
       return qbo[method](credentials.realmId, (error, response) => {
         if (error) {
           return reject(error);

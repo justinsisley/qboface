@@ -1,6 +1,6 @@
 {
   "name": "qboface",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A convenient interface for node-quickbooks",
   "main": "index.js",
   "scripts": {
@@ -16,6 +16,6 @@
     "eslint-plugin-react": "^6.2.0"
   },
   "dependencies": {
-    "node-quickbooks": "^2.0.11"
+    "node-quickbooks": "^2.0.14"
   }
 }
