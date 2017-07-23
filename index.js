@@ -71,6 +71,25 @@ const qboface = {
     });
   },
 
+  // Update data in Quickbooks
+  update(method, payload, credentials) {
+    const qbo = this.factory(credentials);
+
+    return new Promise((resolve, reject) => {
+      if (!qbo[method]) {
+        return reject('method not found');
+      }
+
+      return qbo[method](payload, (error, response) => {
+        if (error) {
+          return reject(error);
+        }
+
+        return resolve(response);
+      });
+    });
+  },
+
   // Query for data from the Quickbooks API
   query(method, criteria, credentials) {
     const qbo = this.factory(credentials);
